@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JAVA SHOES</title>
+    <link rel="icon" href="./imgs/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        
+        * {
+            color: #fff;
+            font-family: "Source Code Pro", monospace;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1050;
+        }
+        .carousel-inner img {
+    max-height: 400px; 
+    object-fit: cover; 
+    width: 100%;
+}
+    </style>
+</head>
+
+<body class="bg-secondary fw-bold text-center text-uppercase">
+    
+    <header id="cabecalho">
+        <div class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container">
+                <h1 class="fw-bold">Tênis multimarcas</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide pt-3 pb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="imgs/adidas.jpg">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="imgs/new balance.jpg">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="imgs/under.jpg">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container pt-3 pb-3" id="sobre" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="row">
+            <div class="col-12">
+                <div class="card text-bg-dark">
+                    <h2 class="card-title pt-3 pb-3 fs-1 fw-bold">Os melhores tênis com os melhores preços</h2>
+                    <img class="d-block w-100" src="imgs/run.webp" alt="Loja" style="height: 500px;">
+                    <h3 class="card-title pt-3">Sobre Nós</h3>
+                    <p class="card-text pt-3 pb-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum perferendis, sunt in autem
+                        distinctio optio exercitationem rerum voluptatum! Accusamus sed laudantium illo odio amet quis
+                        aliquid est tempore repellat doloribus!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="produtos">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="imgs/adidas.jpg">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Adidas Response</h4>
+                        <p class="card-text">
+                            R$189.99
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="imgs/new balance.jpg">
+                    <div class="card-body">
+                        <h4 class="fw-bold">New Balance 574</h4>
+                        <p class="card-text">
+                            R$184.90
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="imgs/under.jpg">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Under Armor Tribase</h4>
+                        <p class="card-text">
+                            R$284.99
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="container bg-dark pt-3 pb-3" style="max-width: 760px; border-radius: 8px;">
+        <div class="row justify-content-center mb-3">
+            <div class="col-lg-8 mb-4">
+                <h2 class="fw-bold text-center">Envie sua mensagem.</h2>
+                <form>
+                    <div class="mb-2">
+                        <label for="nome" class="form-label fw-bold"> nome:</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Nome Sobrenome">
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label fw-bold"> e-mail:</label>
+                        <input type="email" id="email" class="form-control" placeholder="exemplo@exemplo.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="telefone" class="form-label fw-bold"> telefone:</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(XX)XXXXX-XXXX">
+                    </div>
+                    <div class="mb-2">
+                        <label for="mensagem" class="form-label fw-bold"> mensagem:</label>
+                        <textarea id="mensagem" class="form-control" style="resize: none;" rows="4"></textarea>
+                    </div>
+                    <button class="btn btn-warning w-100 fw-bold text-uppercase">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
